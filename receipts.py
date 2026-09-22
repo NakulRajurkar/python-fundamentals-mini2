@@ -64,7 +64,7 @@ def print_report():
         return
     total = sum(receipt.amount for receipt in receipts)
     latest = max(receipts,key=lambda r: r.timestamp)
-    print("\n===== TEMPLE DONATION REPORT=====")
+    print("\n===== TEMPLE DONATION SUMMARY REPORT=====")
     print(f"Total donated : ${total:.2f}")
     print(f"Total receipts: {len(receipts)}")
     print(f"Latest donation: {latest.timestamp.strftime('%Y-%m-%d')}")
